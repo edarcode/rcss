@@ -1,0 +1,21 @@
+.btn {
+	cursor: pointer;
+	line-height: 2.4rem;
+	min-height: 4rem;
+	padding: 0.8rem 1.6rem;
+	background-color: var(--black);
+	color: var(--white);
+	border: none;
+	border-radius: var(--radius-m);
+}
+.btn:disabled {
+	cursor: default;
+}
+.blue {
+	background-color: var(--blue);
+}
+.disabled {
+	color: var(--gray);
+	background-color: transparent;
+	outline: 1px solid var(--gray);
+}

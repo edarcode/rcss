@@ -1,4 +1,7 @@
 @import url("./styles/reset.css");
 @import url("./styles/colors.css");
 @import url("./styles/global.css");
-@import url("./styles/scroll.css");
+@import url("./styles/radius.css");
+@import url("./styles/gaps.css");
+@import url("./styles/paddings.css");
+@import url("./styles/shadows.css");

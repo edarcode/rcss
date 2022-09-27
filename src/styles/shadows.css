@@ -1,0 +1,5 @@
+:root {
+	--shadow-s: 0px 0px 8px hsla(0, 0%, 27%, 0.3);
+	--shadow-m: 0px 0px 12px hsla(0, 0%, 27%, 0.5);
+	--shadow-l: 0px 0px 12px hsla(0, 0%, 24%, 0.8);
+}

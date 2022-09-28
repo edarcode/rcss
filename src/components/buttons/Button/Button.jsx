@@ -22,7 +22,7 @@ export default function Button({
 
 	return (
 		<button {...props} disabled={disabled} className={className}>
-			{text || "I think forget send me text 😁"}
+			{text || "you forget send text 😁"}
 		</button>
 	);
 }

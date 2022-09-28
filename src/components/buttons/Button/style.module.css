@@ -6,16 +6,21 @@
 	background-color: var(--black);
 	color: var(--white);
 	border: none;
-	border-radius: var(--radius-m);
+	border-radius: var(--radius-s);
+	transition: background-color 0.3s, color 0.4s;
 }
-.btn:disabled {
-	cursor: default;
-}
-.blue {
-	background-color: var(--blue);
+.btn:hover {
+	background-color: var(--white);
+	color: var(--black);
 }
 .disabled {
 	color: var(--gray);
 	background-color: transparent;
 	outline: 1px solid var(--gray);
+	transition: initial;
+	cursor: default;
+}
+.disabled:hover {
+	background-color: transparent;
+	color: var(--gray);
 }

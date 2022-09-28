@@ -6,14 +6,14 @@ export default function Button({
 	disabled,
 	className: outerClassName,
 	kind: outerKind,
-	isVisible,
+	isVisible = true,
 	text,
 	...props
 }) {
+	if (!isVisible) return null;
 	if (outerKind && !BUTTONS_KIND[outerKind]) throw TypeError("Err kind");
-	if (isVisible) return null;
 	const kind = disabled ? BUTTONS_KIND.disabled : outerKind;
-	const modifier = BUTTONS_KIND[kind];
+	const modifier = BUTTONS_KIND[kind] || BUTTONS_KIND.a;
 	const className = getFinalClassName({
 		css,
 		local: `btn ${modifier}`,
@@ -22,7 +22,7 @@ export default function Button({
 
 	return (
 		<button {...props} disabled={disabled} className={className}>
-			{text || "you forget send text 😁"}
+			{text || "Submit"}
 		</button>
 	);
 }

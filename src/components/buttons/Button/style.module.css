@@ -3,24 +3,49 @@
 	line-height: 2.4rem;
 	min-height: 4rem;
 	padding: 0.8rem 1.6rem;
-	background-color: var(--black);
-	color: var(--white);
 	border: none;
-	border-radius: var(--radius-s);
+	border-radius: 1.6rem;
+	font-weight: 700;
 	transition: background-color 0.3s, color 0.4s;
 }
-.btn:hover {
-	background-color: var(--white);
-	color: var(--black);
-}
+
 .disabled {
-	color: var(--gray);
+	color: hsl(240, 2%, 44%);
 	background-color: transparent;
-	outline: 1px solid var(--gray);
+	outline: 1px solid hsl(240, 2%, 44%);
 	transition: initial;
 	cursor: default;
 }
-.disabled:hover {
-	background-color: transparent;
-	color: var(--gray);
+
+.a {
+	position: relative;
+	color: hsl(0, 100%, 100%);
+	background-color: hsl(260, 100%, 50%);
+}
+
+.b {
+	color: hsl(0, 100%, 100%);
+	background-color: hsl(60, 100%, 20%);
+}
+
+.c {
+	color: hsl(0, 100%, 100%);
+	background-color: hsl(215, 96%, 50%);
+}
+
+.d {
+	color: hsl(0, 100%, 100%);
+	background-color: red;
+	border-radius: 2.5rem;
+	padding: 0.5rem 1.8rem;
+	box-shadow: 0 0 0.7rem 0.5rem #ff00004d;
+	transition: box-shadow 0.3s;
+}
+
+.d:hover {
+	box-shadow: 0 0 0.7rem 0.9rem #ff00004d;
+}
+
+.d:focus {
+	outline: 3px solid #ff00004d;
 }

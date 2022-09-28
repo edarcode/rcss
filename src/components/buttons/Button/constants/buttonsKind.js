@@ -1,3 +1,7 @@
 export const BUTTONS_KIND = {
-	disabled: "disabled"
+	disabled: "disabled",
+	a: "a",
+	b: "b",
+	c: "c",
+	d: "d"
 };
